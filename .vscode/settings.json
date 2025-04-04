@@ -2,5 +2,11 @@
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": ["--line-length=79"],  // PEP 8 стандарт
     "editor.formatOnSave": true,  // автоформат при сохранении
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "ms-python.black-formatter",
+
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 72,
+        "editor.rulers": [72]
+    }
 }
