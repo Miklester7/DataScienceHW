@@ -1,9 +1,8 @@
 """Игра угадай число
-Компьютер сам загадывает и сам угадывает число"""
+Компьютер сам загадывает и сам угадывает число
+"""
 
 import numpy as np
-
-# number = np.random.randint(1, 101)
 
 
 def random_predict(number: int = 1) -> int:
