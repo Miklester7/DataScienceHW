@@ -5,7 +5,7 @@
 import numpy as np
 
 
-def random_predict(number: int = 1) -> int:
+def random_predict(number: int) -> int:
     """Рандомно угадываем число
 
     Args:
@@ -24,8 +24,9 @@ def random_predict(number: int = 1) -> int:
 
     while True:
         if predict_current == number:
-            break
+            break  # Выход из цикла если угадали
 
+        # Уменьшаем диапазон при каждом шаге
         predict_current = (predict_min + predict_max) // 2
         count += 1
 
